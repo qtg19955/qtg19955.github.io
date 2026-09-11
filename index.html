@@ -13,7 +13,7 @@
   --night:#141A33; --night-deep:#0F1327; --gold:#C9A961; --line:rgba(201,169,97,.28);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{background:var(--night);color:var(--ink);font-family:"Noto Serif KR",serif;font-weight:300;line-height:1.85;font-size:16px;scrollbar-width:thin;scrollbar-color:rgba(201,169,97,.35) transparent}
+html{background:var(--night);color:var(--ink);font-family:"Noto Serif KR",serif;font-weight:300;line-height:1.9;font-size:17.5px;scrollbar-width:thin;scrollbar-color:rgba(201,169,97,.35) transparent}
 ::-webkit-scrollbar{width:8px;height:8px}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:rgba(201,169,97,.35);border-radius:4px}
@@ -31,21 +31,21 @@ body{min-height:100vh;background:
 @media (min-width:900px){.wrap{max-width:760px}}
 header{text-align:center;padding:24px 0 40px}
 .brand{font-family:"Cormorant Garamond",serif;font-size:13px;letter-spacing:.32em;color:var(--gold);margin-bottom:12px}
-h1{font-weight:400;font-size:34px;line-height:1.3;letter-spacing:-.01em}
-.lede{color:var(--ink-dim);margin-top:14px;font-size:15px}
-.moon-line{margin-top:14px;font-size:13.5px;color:var(--ink-faint)}
+h1{font-weight:400;font-size:37px;line-height:1.3;letter-spacing:-.01em}
+.lede{color:var(--ink-dim);margin-top:14px;font-size:16.5px}
+.moon-line{margin-top:14px;font-size:15px;color:var(--ink-faint)}
 nav{display:flex;flex-wrap:wrap;justify-content:center;gap:4px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:0 0 44px}
 nav button{flex:none}
-nav button{background:none;border:0;color:var(--ink-faint);font:inherit;font-size:15px;padding:14px 18px;cursor:pointer;position:relative}
+nav button{background:none;border:0;color:var(--ink-faint);font:inherit;font-size:16.5px;padding:14px 18px;cursor:pointer;position:relative}
 nav button[aria-selected=true]{color:var(--ink)}
 nav button[aria-selected=true]::after{content:"";position:absolute;left:18px;right:18px;bottom:-1px;height:1px;background:var(--gold)}
 nav button:focus-visible{outline:1px solid var(--gold);outline-offset:-4px}
 .subnav{display:flex;gap:8px;margin-bottom:18px}
-.subnav button{background:none;border:1px solid var(--line);color:var(--ink-faint);font:inherit;font-size:13.5px;padding:8px 16px;cursor:pointer;border-radius:2px}
+.subnav button{background:none;border:1px solid var(--line);color:var(--ink-faint);font:inherit;font-size:15px;padding:8px 16px;cursor:pointer;border-radius:2px}
 .subnav button[aria-selected=true]{border-color:var(--gold);color:var(--gold)}
 section[hidden]{display:none}
-h2{font-weight:400;font-size:22px;margin-bottom:8px}
-.sub{color:var(--ink-dim);font-size:14.5px;margin-bottom:28px}
+h2{font-weight:400;font-size:24px;margin-bottom:8px}
+.sub{color:var(--ink-dim);font-size:16px;margin-bottom:28px;word-break:keep-all}
 
 /* wheel */
 .wheel-wrap{display:flex;justify-content:center;margin:8px 0 28px}
@@ -58,69 +58,69 @@ h2{font-weight:400;font-size:22px;margin-bottom:8px}
 .wheel text{fill:var(--ink-dim);font-family:"Cormorant Garamond",serif;font-size:19px;pointer-events:none}
 .wheel .ring{fill:none;stroke:var(--line)}
 .wheel .center{fill:var(--ink);font-family:"Noto Serif KR",serif;font-size:11px}
-.hoverLabel{text-align:center;min-height:22px;color:var(--gold);font-size:14.5px;letter-spacing:.02em;margin-bottom:18px}
-.picks{display:flex;justify-content:center;align-items:center;gap:16px;margin-bottom:28px;font-size:15px}
+.hoverLabel{text-align:center;min-height:22px;color:var(--gold);font-size:16px;letter-spacing:.02em;margin-bottom:18px}
+.picks{display:flex;justify-content:center;align-items:center;gap:16px;margin-bottom:28px;font-size:16.5px}
 .pick{min-width:110px;text-align:center;padding:10px 12px;border:1px solid var(--line)}
-.pick small{display:block;color:var(--ink-faint);font-size:12px;margin-bottom:2px}
+.pick small{display:block;color:var(--ink-faint);font-size:13.5px;margin-bottom:2px}
 .pick.on{border-color:var(--gold)}
 .amp{color:var(--gold);font-family:"Cormorant Garamond",serif;font-size:24px}
-.hint{color:var(--ink-faint);font-size:13.5px;text-align:center}
+.hint{color:var(--ink-faint);font-size:15px;text-align:center}
 
 /* result */
 .result{border-top:1px solid var(--line);padding-top:32px;margin-top:8px}
 .score-line{display:flex;align-items:center;gap:20px;margin-bottom:6px}
 .gauge{flex:none}
 .score{font-family:"Cormorant Garamond",serif;font-size:52px;line-height:1;color:var(--gold)}
-.score-label{font-size:15px;color:var(--ink-dim)}
+.score-label{font-size:16.5px;color:var(--ink-dim)}
 .el-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle;position:relative;top:-1px}
 .swatch{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:7px;vertical-align:middle;position:relative;top:-1px;border:1px solid rgba(237,231,214,.25)}
-.pairname{font-size:19px;margin-bottom:22px}
+.pairname{font-size:21px;margin-bottom:22px}
 .result p{margin-bottom:18px}
 .result p b{font-weight:600;color:var(--ink)}
-.footnote{font-size:13px;color:var(--ink-faint);border-top:1px solid var(--line);padding-top:16px;margin-top:4px;line-height:1.7}
-.facts{display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;font-size:14px;color:var(--ink-dim);border:1px solid var(--line);padding:16px 18px;margin:24px 0}
+.footnote{font-size:14.5px;color:var(--ink-faint);border-top:1px solid var(--line);padding-top:16px;margin-top:4px;line-height:1.7}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;font-size:15.5px;color:var(--ink-dim);border:1px solid var(--line);padding:16px 18px;margin:24px 0}
 .facts span{color:var(--ink-faint)}
 .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.btn{font:inherit;font-size:15px;padding:12px 20px;border:1px solid var(--gold);color:var(--gold);background:none;cursor:pointer;text-decoration:none}
+.btn{font:inherit;font-size:16.5px;padding:12px 20px;border:1px solid var(--gold);color:var(--gold);background:none;cursor:pointer;text-decoration:none}
 .btn.fill{background:var(--gold);color:var(--night-deep);font-weight:600}
 .btn:focus-visible{outline:2px solid var(--ink)}
 .offer{margin-top:40px;padding:26px 24px;border:1px solid var(--line);background:rgba(15,19,39,.5)}
 .offer-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:8px}
-.offer h3{font-weight:400;font-size:18px}
+.offer h3{font-weight:400;font-size:20px}
 .offer-price{font-family:"Cormorant Garamond",serif;font-size:24px;color:var(--gold);white-space:nowrap}
-.offer p{color:var(--ink-dim);font-size:14.5px;margin-bottom:18px}
+.offer p{color:var(--ink-dim);font-size:16px;margin-bottom:18px}
 .offer-btn{display:block;width:100%;text-align:center;box-sizing:border-box}
-.offer-note{margin-top:14px;font-size:12.5px;color:var(--ink-faint);text-align:center}
+.offer-note{margin-top:14px;font-size:14px;color:var(--ink-faint);text-align:center}
 
 /* profiles */
 .signs{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:32px}
 @media (min-width:640px){.signs{grid-template-columns:repeat(6,1fr)}}
-.signs button{background:none;border:1px solid var(--line);color:var(--ink-dim);font:inherit;font-size:14px;padding:12px 4px;cursor:pointer;line-height:1.4}
+.signs button{background:none;border:1px solid var(--line);color:var(--ink-dim);font:inherit;font-size:15.5px;padding:12px 4px;cursor:pointer;line-height:1.4}
 .signs button i{display:block;font-style:normal;font-family:"Cormorant Garamond",serif;font-size:22px;color:var(--gold)}
 .signs button[aria-selected=true]{border-color:var(--gold);color:var(--ink)}
-.profile h3{font-weight:400;font-size:26px}
-.profile .dates{color:var(--ink-faint);font-size:14px;margin-bottom:22px}
-.profile dl{display:grid;grid-template-columns:72px 1fr;gap:12px 16px;font-size:15px}
-.profile dt{color:var(--gold);font-size:14px;padding-top:2px}
+.profile h3{font-weight:400;font-size:28px}
+.profile .dates{color:var(--ink-faint);font-size:15.5px;margin-bottom:22px}
+.profile dl{display:grid;grid-template-columns:72px 1fr;gap:12px 16px;font-size:16.5px}
+.profile dt{color:var(--gold);font-size:15.5px;padding-top:2px}
 .top-match{margin-top:28px;border-top:1px solid var(--line);padding-top:22px}
-.top-match h4{font-weight:400;font-size:15px;color:var(--ink-dim);margin-bottom:14px}
-.match-row{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid rgba(201,169,97,.12);font-size:15px}
+.top-match h4{font-weight:400;font-size:16.5px;color:var(--ink-dim);margin-bottom:14px}
+.match-row{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid rgba(201,169,97,.12);font-size:16.5px}
 .match-row:last-child{border-bottom:none}
-.match-score{font-family:"Cormorant Garamond",serif;color:var(--gold);font-size:18px}
+.match-score{font-family:"Cormorant Garamond",serif;color:var(--gold);font-size:20px}
 .profile dd{color:var(--ink);margin-bottom:8px}
 .profile .body{margin:18px 0 26px}
 
 /* weekly */
-.week-range{color:var(--ink-faint);font-size:14px;margin-bottom:6px}
+.week-range{color:var(--ink-faint);font-size:15.5px;margin-bottom:6px}
 .weekly{border-top:1px solid var(--line);padding-top:26px}
-.weekly h3{font-weight:400;font-size:24px;margin-bottom:4px}
-.weekly .theme{color:var(--gold);font-size:15px;margin-bottom:10px}
-.weekly .overall{font-size:14.5px;color:var(--ink-dim);margin-bottom:22px;line-height:1.75}
-.weekly dl{display:grid;grid-template-columns:52px 1fr;gap:14px 16px;font-size:15px}
-.weekly dt{color:var(--ink-faint);font-size:14px;padding-top:2px}
-.weekly .lucky{margin-top:24px;font-size:14px;color:var(--ink-dim);border-top:1px solid var(--line);padding-top:16px;line-height:2}
+.weekly h3{font-weight:400;font-size:26px;margin-bottom:4px}
+.weekly .theme{color:var(--gold);font-size:16.5px;margin-bottom:10px}
+.weekly .overall{font-size:16px;color:var(--ink-dim);margin-bottom:22px;line-height:1.75}
+.weekly dl{display:grid;grid-template-columns:52px 1fr;gap:14px 16px;font-size:16.5px}
+.weekly dt{color:var(--ink-faint);font-size:15.5px;padding-top:2px}
+.weekly .lucky{margin-top:24px;font-size:15.5px;color:var(--ink-dim);border-top:1px solid var(--line);padding-top:16px;line-height:2}
 
-footer{margin-top:72px;border-top:1px solid var(--line);padding-top:22px;font-size:13px;color:var(--ink-faint);line-height:1.8}
+footer{margin-top:72px;border-top:1px solid var(--line);padding-top:22px;font-size:14.5px;color:var(--ink-faint);line-height:1.8}
 .term{border-bottom:1px dotted var(--gold);cursor:pointer;color:var(--ink)}
 .glossary-overlay{position:fixed;inset:0;background:rgba(10,13,26,.72);display:flex;align-items:flex-end;justify-content:center;z-index:50}
 .glossary-overlay[hidden]{display:none}
@@ -128,15 +128,15 @@ footer{margin-top:72px;border-top:1px solid var(--line);padding-top:22px;font-si
 .glossary-panel{background:var(--night);border:1px solid var(--line);border-bottom:none;width:100%;max-width:480px;padding:26px 24px 30px;box-sizing:border-box}
 @media (min-width:640px){.glossary-panel{border-bottom:1px solid var(--line)}}
 .glossary-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
-.glossary-head h3{font-weight:400;font-size:18px;color:var(--gold)}
+.glossary-head h3{font-weight:400;font-size:20px;color:var(--gold)}
 .glossary-head button{background:none;border:0;color:var(--ink-faint);font-size:24px;line-height:1;cursor:pointer;padding:0 4px}
-.glossary-panel p{font-size:14.5px;color:var(--ink-dim);line-height:1.8}
+.glossary-panel p{font-size:16px;color:var(--ink-dim);line-height:1.8}
 .ad-rail{display:none;position:fixed;top:140px;width:160px;min-height:600px;border:1px dashed var(--line);color:var(--ink-faint);font-size:12px;align-items:center;justify-content:center;text-align:center;padding:8px}
 /* 애드센스 승인 전까지 숨김. 승인 후 아래 두 미디어쿼리 주석을 해제하세요.
 @media (min-width:1320px){.ad-rail{display:flex}.ad-rail.left{left:calc(50% - 660px)}.ad-rail.right{right:calc(50% - 660px)}}
 @media (min-width:1500px){.ad-rail{width:300px}}
 */
-@media (max-width:520px){h1{font-size:28px}.signs{grid-template-columns:repeat(3,1fr)}nav button{padding:10px 10px;font-size:13.5px}.score{font-size:52px}}
+@media (max-width:520px){h1{font-size:30px}.signs{grid-template-columns:repeat(3,1fr)}nav button{padding:10px 10px;font-size:15px}.score{font-size:54px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -162,7 +162,7 @@ footer{margin-top:72px;border-top:1px solid var(--line);padding-top:22px;font-si
 <!-- 궁합 -->
 <section id="match">
   <h2>별자리 궁합</h2>
-  <p class="sub">원 위에서 두 별자리를 차례로 고르세요. 원소, 양식, 그리고 두 별자리 사이의 각도로 관계의 결을 읽습니다.</p>
+  <p class="sub">원 위에서 두 별자리를 차례로 고르세요. 원소·양식·각도로 관계의 결을 읽습니다.</p>
   <div class="wheel-wrap">
     <svg class="wheel" viewBox="0 0 340 340" aria-label="황도 12궁 선택"></svg>
   </div>
@@ -200,7 +200,7 @@ footer{margin-top:72px;border-top:1px solid var(--line);padding-top:22px;font-si
 <!-- MBTI 궁합 -->
 <section id="mbti" hidden>
   <h2>MBTI 별자리 궁합</h2>
-  <p class="sub">타고난 기질(별자리)과 사고방식(MBTI)이 만났을 때의 결을 봅니다. 별자리를 고르세요.</p>
+  <p class="sub">타고난 기질(별자리)과 사고방식(MBTI)의 궁합을 봅니다. 별자리를 고르세요.</p>
   <div class="signs" id="mbtiGrid"></div>
   <div class="profile" id="mbtiBody"></div>
 </section>
